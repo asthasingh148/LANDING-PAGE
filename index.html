@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darsheel Innovations</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <main>
+    <section id="hero-section" class="hero-section">
+      <div class="hero-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcMzWYLhkytXMhNirhGFbgi0G-5rCQ8inTJVijqchbHgL6Fr_xzG7w66I5SVfxfj2oW5M&usqp=CAU" alt="Icon" class="hero-icon"> <!-- Insert your image icon here -->
+        <div class="highlighted-text">
+          <h2>Innovate. Create. Inspire.</h2>
+          <p>Your gateway to creativity and innovation starts here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  
+
+  <!-- About Founder Section -->
+  <section id="about-founder" class="about-founder-section">
+    <div class="about-founder-content">
+      <h2>About Our Founder</h2>
+      <div class="founder-info">
+        <img src="https://scontent.fhyd14-1.fna.fbcdn.net/v/t39.30808-6/407467335_18000718664258540_6571757647887180874_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=QyOX9FprRZoAX-Jc05Q&_nc_ht=scontent.fhyd14-1.fna&oh=00_AfA3MsBqfF2qev7ii-PZwqIkqd0Me8rBx42h6CaD8jjVNA&oe=65CE95B0" alt="Founder Image"> <!-- Replace 'founder-image.jpg' with your image file -->
+        <p>Darsheel Savla, a co-founder at PatilKaki, is a charismatic and creative powerhouse who infuses his passion for food, people, and brand building into everything he does. With an unshakable drive and an insatiable appetite for culinary exploration, he's determined to bring the legendary recipes of PatilKaki to the world. Also, a visionary leader with a passion for building D2C businesses, Darsheel is rolling out his new consultancy programme to help fellow founders and entrepreneurs navigate the challenges of going Direct-2-Consumer. Join him in this journey to gain various insights on industry secrets and how to supercharge the pace at which you learn and grow! 🚀📈</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Why Choose Darsheel Section -->
+  <section id="why-choose-us" class="why-choose-us-section">
+    <div class="why-choose-us-content">
+      <h2>Why Choose Us?</h2>
+      <div class="icon-list">
+        <div class="icon-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/8920/8920621.png" alt="Icon 1"> <!-- Replace 'icon1.png' with your icon image file -->
+          <h3>Expertise</h3>
+          <p>🌟 Expertise: Darsheel brings unmatched D2C knowledge and hands-on experience.</p>
+        </div>
+        <div class=="icon-item">
+          <img src="https://cdn-icons-png.flaticon.com/256/10480/10480077.png" alt="Icon 2"> <!-- Replace 'icon2.png' with your icon image file -->
+          <h3>Reliability</h3>
+          <p>💡 Innovation: Expect creative
+             solutions tailored to your business's needs.</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/4221/4221628.png" alt="Icon 3"> <!-- Replace 'icon3.png' with your icon image file -->
+          <h3>Quality</h3>
+          <p>🚀 Growth: Accelerate your success with Darsheel's dynamic leadership and mentorship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--timer-->
+  <section id="countdown-section" class="countdown-section">
+    <div class="countdown-content">
+      <h2>Sign up now! Limited time offer</h2>
+      <div id="timer" class="timer"></div>
+      <button id="signup-button" class="signup-button">Sign Up</button>
+    </div>
+  </section>
+  
+  
+  
+  <script>
+
+  // JavaScript for Live Countdown Timer
+document.addEventListener("DOMContentLoaded", function() {
+  const timerElement = document.getElementById("timer");
+  const endTime = new Date();
+  endTime.setMinutes(endTime.getMinutes() + 10); // Set end time 10 minutes from now
+
+  function updateTimer() {
+    const currentTime = new Date();
+    const timeDifference = endTime - currentTime;
+
+    if (timeDifference <= 0) {
+      clearInterval(timerInterval);
+      timerElement.textContent = "Time's up!";
+      return;
+    }
+
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    // Display the timer text with a bold colon
+    timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  }
+
+  // Initial call to updateTimer function
+  updateTimer();
+
+  // Update the timer every second
+  const timerInterval = setInterval(updateTimer, 1000);
+  const signupButton = document.getElementById("signup-button");
+  signupButton.addEventListener("click", function() {
+    // Add your signup button click functionality here
+    
+  });
+});
+
+
+
+
+
+</script>
+
+    <!-- Call to Action Section -->
+    <section id="cta-section" class="cta-section">
+      <div class="cta-content">
+        <h2>Take Action Now</h2>
+        <p>Don't miss out on this opportunity. Join us today!</p>
+        <button class="cta-button">Join Now</button>
+      </div>
+    </section>
+    <!--slideup form-->
+      
+    <section id="form-section" class="form-section">
+      <div id="form-container" class="form-container">
+        <h3>Subscribe to our newsletter</h3>
+        <form id="subscribe-form" class="subscribe-form">
+          <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    
+    <script>
+    
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    var formSection = document.getElementById("form-section");
+    formSection.style.bottom = "0"; // Slide up the form after 15 seconds
+  }, 15000); // 15 seconds delay
+});
+
+</script>
+    
