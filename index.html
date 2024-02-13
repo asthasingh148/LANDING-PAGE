@@ -4,8 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Darsheel Innovations</title>
-  <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+  
+  /* Fonts */
+  body {
+    font-family: 'General Sans', sans-serif;
+  }
+  
+  /* Colors */
+
+/* Hero Section Styles */
+/* Add this to your existing CSS */
+.hero-section {
+    background-image: url('https://img.freepik.com/free-vector/pastel-background-with-natural-elements_52683-45541.jpg?w=996&t=st=1707810705~exp=1707811305~hmac=06533ff6076f2ed12f1852200d851152347d995a47c8e2b889f5b412b58ebd21'); /* Change 'hero-background.jpg' to your image file */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1b1a1a;
+
+}
+
+.hero-content {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-icon {
+  width: 300px; /* Increase the size of the icon */
+  margin-right: 50px; /* Adjust spacing between icon and text */
+}
+
+.highlighted-text {
+  text-align: left;
+}
+
+.highlighted-text h2 {
+  font-size: 3em; /* Increase the font size of the heading */
+  margin-bottom: 20px;
+}
+
+.highlighted-text p {
+  font-size: 1.5em; /* Increase the font size of the paragraph */
+  margin-bottom: 40px;
+}
+
+</style>
 <body>
   <!-- Hero Section -->
   <main>
@@ -24,6 +73,42 @@
   
 
   <!-- About Founder Section -->
+  <style> .about-founder-section {
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover;
+    background-position: center;
+    color: #0e0d0d;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .about-founder-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-founder-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .founder-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .founder-info img {
+    width: 200px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .founder-info p {
+    font-size: 1.2em;
+    max-width: 500px;
+  }
+  </style>
   <section id="about-founder" class="about-founder-section">
     <div class="about-founder-content">
       <h2>About Our Founder</h2>
@@ -36,6 +121,58 @@
   
 
   <!-- Why Choose Darsheel Section -->
+  <style>  .why-choose-us-section {
+    background-image: url('https://img.freepik.com/premium-vector/blank-background-watercolor-with-floral-abstract-wet-hand-drawn_712151-387.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707696000&semt=ais');
+    background-position: center;
+    background-size: cover; /* Adjusted background image size */
+    color: #110f0f;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+  
+  .why-choose-us-content {
+    text-align: center;
+  }
+  
+  .why-choose-us-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow icons to wrap to the next line if necessary */
+    margin-top: 30px;
+  }
+  
+  .icon-item {
+    flex: 0 0 calc(33.33% - 20px); /* Set flex basis to fit 3 items in one row with spacing */
+    margin: 0 10px; /* Adjust spacing between icon items */
+    text-align: center;
+    max-width: 200px; /* Limit maximum width of each icon item */
+  }
+  
+  .icon-item img {
+    width: 100%; /* Make sure icons fill the available space within the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100px; /* Set a maximum width for the icons */
+    margin-bottom: 10px; /* Add spacing between icon and text */
+  }
+  
+  .icon-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .icon-item p {
+    font-size: 1em;
+    color: #666;
+  }
+   </style>
   <section id="why-choose-us" class="why-choose-us-section">
     <div class="why-choose-us-content">
       <h2>Why Choose Us?</h2>
@@ -60,6 +197,50 @@
     </div>
   </section>
   <!--timer-->
+  <style>.countdown-section {
+    background-image: url('https://pixewall.com/wp-content/uploads/2021/09/Sage-Green-Desktop-Wallpaper-scaled.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .countdown-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .countdown-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0e0d0d;
+    background-color: #eeeeeb; /* Green background for timer text */
+    padding: 10px 20px;
+    display: inline-block;
+  }
+ /* CSS for Signup Button */
+.signup-button {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally and add space around it */
+    padding: 10px 20px;
+    background-color: #e2eb91; /* Yellow background */
+    border: none;
+    color: #000; /* Black text color */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-button:hover {
+    background-color: #f1e7b1; /* Brighter yellow on hover */
+  }
+  </style>
   <section id="countdown-section" class="countdown-section">
     <div class="countdown-content">
       <h2>Sign up now! Limited time offer</h2>
@@ -73,6 +254,7 @@
   <script>
 
   // JavaScript for Live Countdown Timer
+
 document.addEventListener("DOMContentLoaded", function() {
   const timerElement = document.getElementById("timer");
   const endTime = new Date();
@@ -114,6 +296,43 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
     <!-- Call to Action Section -->
+    <style>.cta-section {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjqFDeGwLb6qfDcCzW4_yBzXBGVl5RStGRHRPjOTtqK6ziF7bxoRSXM4MKibLy_KlxX3c&usqp=CAU'); /* Replace 'background-picture.jpg' with your image file */
+      background-size: cover;
+      background-position: center;
+      color: #0d0c0c;
+      text-align: center;
+      padding: 100px 0;
+    }
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #e2eb91; /* Orange background color */
+    border: none;
+    color: #181717; /* White text color */
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #e6f387; /* Darker orange on hover */
+  }</style>
     <section id="cta-section" class="cta-section">
       <div class="cta-content">
         <h2>Take Action Now</h2>
@@ -122,6 +341,50 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
     </section>
     <!--slideup form-->
+    <style>.form-section {
+      position: fixed;
+      bottom: -100%; /* Initially hidden below the viewport */
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+      z-index: 9999;
+      transition: bottom 0.5s ease; /* Smooth transition for sliding effect */
+      font-family: 'General Sans', sans-serif; /* Primary font */
+    }
+    
+    .form-container {
+      padding: 20px;
+      color: #99e4a2;
+    }
+    
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .subscribe-form input,
+    .subscribe-form button {
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    
+    .subscribe-form input[type="text"],
+    .subscribe-form input[type="email"],
+    .subscribe-form button {
+      width: 100%;
+    }
+    
+    .subscribe-form input[type="submit"] {
+      background-color: #8f8886; /* Sage Green */
+      color: #94d1cb; /* Royal Yellow */
+      border: none;
+      cursor: pointer;
+    }
+    
+    .subscribe-form input[type="submit"]:hover {
+      background-color: #858280; /* Grey */
+    }
+    </style>
       
     <section id="form-section" class="form-section">
       <div id="form-container" class="form-container">
